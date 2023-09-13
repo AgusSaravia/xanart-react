@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import { navigation } from "./data";
+import { navigation } from "../data";
+
 
 
 const NavLinks = ({links}) => {
