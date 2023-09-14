@@ -17,17 +17,9 @@ return(
 
 const Hero = () => {
   return (
-        <section className="bg-white min-w-full items-center justify-evenly flex flex-auto">
-            <div className="flex ">
-            <Image
-             className="self-center "
-                src={"/tatuando(1).png"}
-                width={900}
-                height={400}
-                alt="Ale tatuando"        
-            />
-            </div>
-            <div className="text-center  ">
+        <section className="bg-[url('/aletatuando.png')] bg-no-repeat bg-cover w-[100svw] min-h-screen items-start px-5 bg-center  ">
+
+            <div className=" px-[10rem] py-[10rem] ">
               <HeroText paragraph={hero_text} title={hero_title} anchor_text={"GaLEriA"}/>
         
             </div>

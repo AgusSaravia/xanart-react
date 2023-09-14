@@ -15,7 +15,7 @@ export default function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
   
     return (
-      <div className="flex items-center min-w-full px-9 justify-between border-b border-gray-400 py-8">
+      <div className="bg-black flex items-center min-w-full px-9 justify-between border-b border-gray-400 py-8">
         <a href="/">
         <Image 
           className="max-w-full h-auto object-contain"
@@ -43,7 +43,7 @@ export default function Header() {
                 onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
               >
                 <svg
-                  className="h-8 w-8 text-gray-600"
+                  className="h-8 w-8 text-slate-100"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
