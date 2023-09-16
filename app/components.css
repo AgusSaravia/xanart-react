@@ -17,21 +17,31 @@
 }
 
 
+
+
 @layer components {
     .heroTitle {
-        @apply text-4xl font-bold tracking-tight text-gray-300 sm:text-6xl
+        @apply pt-3.5 text-5xl  font-bold tracking-tight text-gray-300 sm:text-6xl
+    }
+
+    .surname{
+        @apply
+        flex
+        font-light
+        text-[2.8rem]
+    
     }
 
     .heroParagraph {
-        @apply mt-6 text-lg leading-8 text-gray-100
+        @apply mt-6 text-lg leading-8 w-[19rem] py-[5rem] text-gray-100
     }
 
     .heroAnchorContainer {
-        @apply mt-10  gap-x-6
+        @apply mb-4
     }
 
     .heroAnchor {
-        @apply rounded-md bg-slate-300 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400
+        @apply rounded-md bg-slate-300 px-4  py-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-slate-500 hover:text-white focus-visible:outline focus-visible:outline-2 first-letter:first-line:marker:focus-visible:outline-offset-2 focus-visible:outline-slate-400
     }
 
 

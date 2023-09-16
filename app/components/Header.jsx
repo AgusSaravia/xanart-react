@@ -15,10 +15,10 @@ export default function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
   
     return (
-      <div className="bg-black flex items-center min-w-full px-9 justify-between border-b border-gray-400 py-8">
+      <div className="bg-black flex items-center min-w-full px-9 lg:px-[11rem] justify-between border-b border-gray-400 ">
         <a href="/">
         <Image 
-          className="max-w-full h-auto object-contain"
+          className="max-w-full  h-auto object-contain"
           src= {"/xanart.png"}
           width={160}
           height={160}
