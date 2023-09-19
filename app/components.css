@@ -17,11 +17,16 @@
 }
 
 
-
+svg[stroke="currentColor"]{
+     color: black;
+}
 
 @layer components {
     .heroTitle {
-        @apply pt-3.5 text-5xl  font-bold tracking-tight text-gray-300 sm:text-6xl
+        @apply pt-3.5 text-5xl  font-bold tracking-tight  sm:text-6xl
+    }
+    .heroTitle::first-letter{
+       @apply text-[3.5rem]
     }
 
     .surname{
@@ -29,6 +34,7 @@
         flex
         font-light
         text-[2.8rem]
+        text-white
     
     }
 
