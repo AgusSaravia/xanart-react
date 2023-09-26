@@ -15,7 +15,7 @@ export default function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
   
     return (
-      <div className="bg-zinc-900 flex items-center min-w-full px-9 lg:px-[11rem] justify-between border-b border-gray-400 ">
+      <div className="bg-gradient-to-b from-black via-[#212121] to-black flex items-center min-w-full px-9 lg:px-[11rem] justify-between border-b border-gray-400 ">
         <a href="/">
         <Image 
           className="max-w-full  h-auto object-contain"
@@ -31,9 +31,9 @@ export default function Header() {
               className="HAMBURGER-ICON space-y-2"
               onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
             >
-              <span className="block h-0.5 w-8 animate-pulse bg-slate-600"></span>
-              <span className="block h-0.5 w-8 animate-pulse bg-slate-600"></span>
-              <span className="block h-0.5 w-8 animate-pulse bg-slate-600"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-slate-400"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-slate-400"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-slate-400"></span>
             </div>
 
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"} //toggle class based on isNavOpen 
@@ -56,7 +56,7 @@ export default function Header() {
                 </svg>
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-                <NavLinks links={navigation}/>
+                 <NavLinks links={navigation}/>
               </ul>
             </div>
           </section>
@@ -76,7 +76,7 @@ export default function Header() {
           height: 50vh;
           top: 0;
           left: 0;
-          background: gray;
+          background: rgb(13, 13, 0);
           z-index: 10;
           display: flex;
           flex-direction: column;
