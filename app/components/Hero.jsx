@@ -1,6 +1,6 @@
-import Image from "next/image"
+
 import { firstN, surname, hero_text } from "../data"
-import { useEffect } from "react"
+
 
 
 const HeroText=  ({paragraph, firstN, anchor_text, surname}) =>{
