@@ -43,13 +43,12 @@ svg[stroke="currentColor"]{
     }
 
     .heroAnchorContainer {
-        @apply mb-4
+        @apply mb-4 text-white
     }
 
     .heroAnchor {
-        @apply rounded-md bg-slate-300 px-4  py-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-slate-500 hover:text-white focus-visible:outline focus-visible:outline-2 first-letter:first-line:marker:focus-visible:outline-offset-2 focus-visible:outline-slate-400
+        @apply rounded-md bg-red-900 px-4  py-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-red-600 hover:text-white focus-visible:outline focus-visible:outline-2 first-letter:first-line:marker:focus-visible:outline-offset-2 focus-visible:outline-white text-white
     }
 
-
-
+    
 }
