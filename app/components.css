@@ -50,5 +50,12 @@ svg[stroke="currentColor"]{
         @apply rounded-md bg-red-900 px-4  py-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-red-600 hover:text-white focus-visible:outline focus-visible:outline-2 first-letter:first-line:marker:focus-visible:outline-offset-2 focus-visible:outline-white text-white
     }
 
-    
+    .formBtn{
+        @apply
+         w-full bg-zinc-900 hover:bg-zinc-700 text-white  h-10 rounded-xl 
+    }
+
+
 }
+
+

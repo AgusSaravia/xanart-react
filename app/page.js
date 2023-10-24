@@ -2,8 +2,9 @@
 
 import Hero from "./components/Hero"
 import Header from "./components/Header"
-import Form from "./Contact-Us/page"
+import Form from "./components/ContacForm"
 import CallToAction from "./components/Cta.js"
+import { Gallery } from "./components/Gallery"
 
 
 
@@ -13,7 +14,9 @@ export default function Home() {
       <Header/>
       <Hero/>
       <CallToAction/>
+      <Gallery/>
       <Form />
+      
     </main>
   )
 }
