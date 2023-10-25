@@ -17,25 +17,21 @@
 }
 
 
-svg[stroke="currentColor"]{
-     color: black;
+svg[stroke="currentColor"] {
+    color: black;
 }
 
 @layer components {
     .heroTitle {
-        @apply pt-3.5 text-5xl  font-bold tracking-tight  sm:text-6xl
-    }
-    .heroTitle::first-letter{
-       @apply text-[3.5rem]
+        @apply pt-3.5 text-5xl font-bold tracking-tight sm:text-6xl
     }
 
-    .surname{
-        @apply
-        flex
-        font-light
-        text-[2.8rem]
-        text-white
-    
+    .heroTitle::first-letter {
+        @apply text-[3.5rem]
+    }
+
+    .surname {
+        @apply flex font-light text-[2.8rem] text-white
     }
 
     .heroParagraph {
@@ -47,15 +43,31 @@ svg[stroke="currentColor"]{
     }
 
     .heroAnchor {
-        @apply rounded-md bg-red-900 px-4  py-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-red-600 hover:text-white focus-visible:outline focus-visible:outline-2 first-letter:first-line:marker:focus-visible:outline-offset-2 focus-visible:outline-white text-white
+        @apply rounded-md bg-red-900 px-4 py-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-red-600 hover:text-white focus-visible:outline focus-visible:outline-2 first-letter:first-line:marker:focus-visible:outline-offset-2 focus-visible:outline-white text-white
     }
 
-    .formBtn{
-        @apply
-         w-full bg-zinc-900 hover:bg-zinc-700 text-white  h-10 rounded-xl 
+    .formBtn {
+        @apply w-full bg-red-900 hover:bg-red-800 text-white h-10 rounded-xl
     }
 
 
 }
 
 
+@layer components {
+
+    .footer {
+        @apply h-[20svh] bg-zinc-950 w-[100%] flex flex-col items-center
+    }
+
+    .parallax-container {
+        @apply h-[40svh] overflow-hidden relative;
+    }
+
+    .parallax-image {
+        @apply h-full bg-fixed bg-center bg-no-repeat bg-cover transform translate-z-0;
+    }
+
+
+
+}
