@@ -1,15 +1,10 @@
+'use client'
 import { useState } from "react";
 import Image from "next/image";
 import { navigation } from "../data";
+import NavLinks from "./NavLinks";
 
 
-
-const NavLinks = ({links}) => {
-  return (links.map((e, i)=>{
-     return <li className="custom" key={i}><a href={e.link}>{e.name}</a></li>
-
-  }))
-}
 
 export default function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
