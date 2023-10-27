@@ -18,12 +18,25 @@ const images = [
         src:"/aletatuando.png",
         alt:"Imagen 3",
         
-    }
+    },
+    {
+        id:5,
+        src:"/aletatuando.png",
+        alt:"Imagen 3",
+        
+    },
+    {
+        id:4,
+        src:"/aletatuando.png",
+        alt:"Imagen 3",
+        
+    },
+   
 ]
 
 const GalleryCard =( )=>{
     return(
-            <div className="grid grid-flow-col  gap-5 ">
+            <div className="grid grid-flow-col grid-rows-2  gap-[1.5rem] ">
               {
                 images.map((e)=>{
                  return   (
@@ -51,7 +64,7 @@ export  const Gallery = () =>{
     return(
 
             
-        <div className=" grid-flow-row"><GalleryCard/></div>
+        <div className='w-full '><GalleryCard/></div>
     
     
     )

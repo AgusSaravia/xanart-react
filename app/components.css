@@ -2,7 +2,7 @@
 
 @layer components {
     .custom {
-        @apply text-gray-300 hover:bg-gray-700 hover:text-white px-3 font-medium py-2 rounded-md text-xl;
+        @apply text-gray-300 hover:bg-red-900 hover:text-white px-3 font-medium py-2 rounded-md text-xl;
     }
 
 
@@ -26,10 +26,7 @@ svg[stroke="currentColor"] {
         @apply pt-3.5 text-5xl font-bold tracking-tight sm:text-6xl
     }
 
-    .heroTitle::first-letter {
-        @apply text-[3.5rem]
-    }
-
+    
     .surname {
         @apply flex font-light text-[2.8rem] text-white
     }
