@@ -35,7 +35,7 @@ const sendEmail = (e) =>{
 }
 
   return (
-    <section className="w-[100%] max-w-lg m-auto bg-zinc-900">
+    <section className=" max-w-lg m-auto bg-zinc-900">
       <h2 className="text-base font-semibold leading-7 text-gray-100">Contactame!</h2>
       <form ref={form} action="#" method="post" className="flex flex-col gap-4">
           <FormInput title="Nombre" type='text' name='Nombre'/>

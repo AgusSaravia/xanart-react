@@ -8,9 +8,8 @@ const public_key = 'KyrlWZqMzet3THDnm'
 const service_ID = 'test_xanart'
 const template_ID = 'template_s43ghy9'
 
-let hero_text = "Me especializo en X, desde el 20XX comence a tatuar persigo X y me gusta hacer X"
-const firstN = "Alexander"
-const surname = "Rodriguez"
+let hero_text = "Desde el boceto hasta la piel.  ¿Tienes un sueño, una inspiración, una visión? Estamos aquí para llevarla a la realidad, infundiendo cada diseño con la magia de la individualidad."
+
 
 
 const artists = [
@@ -28,8 +27,6 @@ const artists = [
 export {
   artists,
   hero_text,
-  firstN,
-  surname,
   service_ID,
   template_ID,
   public_key

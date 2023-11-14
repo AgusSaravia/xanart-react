@@ -1,71 +1,105 @@
-import Image from 'next/image'
 
-const images = [
-    {
-        id:1,
-        src:"/aletatuando.png",
-        alt:"Imagen 1",
-        
-    }, 
-    {
-        id:2,
-        src:"/aletatuando.png",
-        alt:"Imagen 2",
-        
-    }, 
-    {
-        id:3,
-        src:"/aletatuando.png",
-        alt:"Imagen 3",
-        
-    },
-    {
-        id:5,
-        src:"/aletatuando.png",
-        alt:"Imagen 3",
-        
-    },
-    {
-        id:4,
-        src:"/aletatuando.png",
-        alt:"Imagen 3",
-        
-    },
-   
-]
-
-const GalleryCard =( )=>{
+  const Gallery = () =>{
     return(
-            <div className="grid grid-flow-col grid-rows-2  gap-[1.5rem] ">
-              {
-                images.map((e)=>{
-                 return   (
-                 <div key={e.id} >
-                 <Image
-                        src={e.src}
-                        width={500}
-                        height={500}
-                        alt={e.alt}
-                        
-                    
-                    />
-                    </div>)
-                })
-            
-                
-              }
-              
-            
+
+        <div className="container mx-auto p-4 bg-black">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-1-1.webp"
+                alt=""
+              />
             </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-2-1.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg "
+                src="/foto-2-1.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-12.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-6.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-10.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-4.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-10.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-1-1.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-11.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="/foto-8.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    
     )
 }
 
-export  const Gallery = () =>{
-    return(
+export  const GallerySection = ()=>{
 
-            
-        <div className='w-full '><GalleryCard/></div>
-    
-    
-    )
+return(
+  <div className="min-w-full "><Gallery/></div>
+)
+
+
 }

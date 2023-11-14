@@ -1,44 +1,51 @@
 
-import { firstN, surname, hero_text } from "../data"
+
+import {gsap} from "gsap"
+import { useEffect } from "react";
+import SplitType from "split-type"
+import { useRef } from "react";
 
 
 
-const HeroText=  ({paragraph, firstN, anchor_text, surname}) =>{
-return(
-    <>
-    <h1 className="heroTitle">{firstN}<span className="surname">{surname}</span></h1>
-    <p className="heroParagraph w-[40svw]">{paragraph}</p>
-    <div className="heroAnchorContainer">
-    <a href="#" className="heroAnchor">{anchor_text}</a>
+const HeroText=  () =>{
+  const target = useRef(null);
+
+  useEffect(()=>{
+    if (target.current){
+      gsap.set(target.current, {visibility: "visible"})
+      const text = new SplitType(target.current)
+      gsap.from(text.chars, {
+        xPercent:-50,
+        opacity: 0,
+        stagger: {
+          from:"left",
+          each: 0.05
+        },
+        duration:2,
+        scale:0.5,
+        ease:"expo.out",
+        color: "red",
+        
+      })
+    }
+
+
+  },[target])
+
+  return(
+    <div className="w-screen h-screen flex justify-center flex-col gap-12 items-center ">
+    <h1 id="text" ref={target} className="lg:text-8xl md:text-6xl text-center mix-blend-normal font-bold">VOS PONES LA PIEL, NOSOTROS EL ARTE </h1>
+    <div className=" w-full h-[40px] bg-red-950"><a href="/Gallery">Porftolio</a></div>
     </div>
-    </>
 )
 }
 
 
 
-const Hero = () => {
+export const Hero = () => {
   return (
-        <section className="bg-[url('/aletatuando.png')] bg-no-repeat bg-cover w-[100svw] min-h-full items-start px-5 bg-center">
-          <div  id="scrollContainer" className=" flex-col flex px-[1.5rem] lg:px-[10rem] rem] font-eczar  ">
-            <HeroText  paragraph={hero_text} firstN={firstN} surname={surname} anchor_text={"Mis trabajos"}/>            
-            <div  className="self-center mt-[10rem] animate-bounce ">      
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-              </svg>
-            </div>
-          
-          </div>
-        </section>    
-
-
-
-
-
-
-
-
+    <>
+    <div className="bg-xanart"><HeroText/></div>
+    </>
   )
 }
-
-export default Hero

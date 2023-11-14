@@ -4,14 +4,14 @@ import { artists, navigation } from '../data';
 import NavLinks from './NavLinks.jsx'
 import Image from 'next/image';
 
-const Footer = () => {
+ export const Footer = () => {
   return (
-    <footer className='py-5 h-auto w-full bg-zinc-950 flex flex-col justify-center items-center'>
-     <div className='w-[70%] flex justify-center border-b'> 
+    <footer className='w-full max-h-[20svh] '>
+     <div className=''> 
      <a href="/"> <Image
-      className=' h-auto'
+      className=' '
         src={'/xanart.png'}
-        width={200}
+        width={90}
         height={100}
         alt="Xanart logo "
       /></a>
@@ -20,11 +20,11 @@ const Footer = () => {
 
 
      </div>
-      <nav className='px-9 py-4 list-none flex flex-col'>
-        <div className='flex text-xs py-4'>
+      <nav className=''>
+        <div className=''>
         <NavLinks links={navigation}/>
         </div>
-        <div className='flex flex-row'>
+        <div className=''>
 
           {artists.map((artist, index) => (
           <SocialMediaLinks key={index} artist={artist} />
@@ -38,8 +38,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;
-
-//{artists.map((artist, index) => (
-  //<SocialMediaLinks key={index} artist={artist} />
-//))}

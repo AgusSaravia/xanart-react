@@ -2,7 +2,7 @@
 
 @layer components {
     .custom {
-        @apply text-gray-300 hover:bg-red-900 hover:text-white px-3 font-medium py-2 rounded-md text-xl;
+        @apply text-gray-300 hover:bg-red-900 hover:text-white px-3 font-medium  rounded-md ;
     }
 
 
@@ -22,26 +22,15 @@ svg[stroke="currentColor"] {
 }
 
 @layer components {
-    .heroTitle {
-        @apply pt-3.5 text-5xl font-bold tracking-tight sm:text-6xl
-    }
-
-    
-    .surname {
-        @apply flex font-light text-[2.8rem] text-white
-    }
-
+  
     .heroParagraph {
-        @apply mt-6 text-lg leading-8 w-[19rem] py-[5rem] text-gray-100
+        @apply  text-2xl py-4 w-7/12 lg:w-5/12 
     }
 
     .heroAnchorContainer {
-        @apply mb-4 text-white
-    }
+        @apply mt-[4rem] text-white bg-red-100 max-w-md rounded-xl py-4 max-h-14 text-center px-10
+     }
 
-    .heroAnchor {
-        @apply rounded-md bg-red-900 px-4 py-3.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-red-600 hover:text-white focus-visible:outline focus-visible:outline-2 first-letter:first-line:marker:focus-visible:outline-offset-2 focus-visible:outline-white text-white
-    }
 
     .formBtn {
         @apply w-full bg-red-900 hover:bg-red-800 text-white h-10 rounded-xl
