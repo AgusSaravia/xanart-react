@@ -1,25 +1,21 @@
-'use client'
-import Hero from "./components/Hero"
-import Form from "./components/ContacForm"
-import CallToAction from "./components/Cta.js"
-import {  GallerySection } from "./components/Gallery"
-import {Footer} from "./components/Footer"
+"use client";
+import Hero from "./components/Hero";
+import Form from "./components/ContacForm";
+import CallToAction from "./components/Cta.js";
+import { GallerySection } from "./components/Gallery";
+import { Footer } from "./components/Footer";
 
-
-
- function Home() {
+function Home() {
   return (
-  <>
+    <>
       <div className="bg-[url('/aletatuando.webp')]   w-[100svw]  min-h-screen bg-no-repeat bg-cover bg-center flex justify-center ">
-      <Hero/>
+        <Hero />
       </div>
-      <GallerySection/>
+      <GallerySection />
       <Form />
-      <Footer/>
-
-  </> 
-  )
+      <Footer />
+    </>
+  );
 }
 
-
-export default Home 
+export default Home;
