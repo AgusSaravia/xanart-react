@@ -4,10 +4,12 @@ import {gsap} from "gsap"
 import { useEffect } from "react";
 import SplitType from "split-type"
 import { useRef } from "react";
+import Header from "./Header";
+import Image from "next/image";
 
 
 
-const HeroText=  () =>{
+const HeroText=  ({text}) =>{
   const target = useRef(null);
 
   useEffect(()=>{
@@ -18,34 +20,58 @@ const HeroText=  () =>{
         xPercent:-50,
         opacity: 0,
         stagger: {
-          from:"left",
-          each: 0.05
+          from:"top",
+          each: 0.04
         },
-        duration:2,
+        duration:1,
         scale:0.5,
-        ease:"expo.out",
+        ease:"expo",
         color: "red",
         
       })
     }
 
-
   },[target])
 
+
   return(
-    <div className="w-screen h-screen flex justify-center flex-col gap-12 items-center ">
-    <h1 id="text" ref={target} className="lg:text-8xl md:text-6xl text-center mix-blend-normal font-bold">VOS PONES LA PIEL, NOSOTROS EL ARTE </h1>
-    <div className=" w-full h-[40px] bg-red-950"><a href="/Gallery">Porftolio</a></div>
-    </div>
+    
+    <h1 id="text" ref={target} className="   5xl:text-9xl sm:text-9xl md:text-6xl text-center">{text}</h1>
+    
 )
 }
+const HeroGrid = () =>{
+  return(
+    <div className="grid grid-cols-5 grid-rows-8 gap-7">
+    <div className="row-span-2 col-start-2 row-start-2">
+    <HeroText text={"Vos pones la piel"}/>
+    </div>
+    <div className="row-span-4 col-start-3 row-start-3"> 
+      <Image
+      src={'/LOGO(1).png'}
+      width={1000}
+      height={500}
+      alt="LOGO"
+      />
+        </div>
+   <div className="row-span-5 col-start-4 row-start-6"><HeroText text={"Nosotros el arte"}/></div>
+</div>
+  )
+}
 
+const Hero = () => {
 
-
-export const Hero = () => {
+  const isWindowDefined = typeof window !== 'undefined';
   return (
+
     <>
-    <div className="bg-xanart"><HeroText/></div>
+    <section className="w-full   gap-32 py-4 bg-opacity-60   bg-black">
+    <Header/>
+
+    
+    <HeroGrid/>
+    </section>
     </>
   )
 }
+export default Hero 

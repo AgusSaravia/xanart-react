@@ -10,11 +10,10 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'xanart': 'bg-[url("./aletatuando.webp")]'
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
       fontFamily: {
-        'eczar': ['Eczar', 'monospace'],
+        'creepster': ['Creepster', 'sans-serif'],
       }
     },
   },

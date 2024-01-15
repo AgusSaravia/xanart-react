@@ -2,17 +2,9 @@
 
 @layer components {
     .custom {
-        @apply text-gray-300 hover:bg-red-900 hover:text-white px-3 font-medium  rounded-md ;
+        @apply text-white  hover:text-red-500 px-3 text-xl;
     }
 
-
-    .btn {
-        @apply font-bold text-white py-2 px-4 rounded
-    }
-
-    .btn-primary {
-        @apply bg-slate-600
-    }
 
 }
 

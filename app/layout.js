@@ -1,12 +1,15 @@
 import './globals.css'
 import './components.css'
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
-import Head from 'next/head'
+import { New_Rocker } from 'next/font/google'
 import { link } from 'fs'
 
-const inter = Inter({ subsets: ['latin'] })
 
+
+ 
+const new_rocker = New_Rocker({
+  weight: '400',
+  subsets: ['latin'],
+})
 export const metadata = {
   title: 'Xanart Studios',
   description: 'Xanart, vos pones la idea nosotros el arte.',
@@ -16,8 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-  
-      <body className={inter.className}>{children}</body>
+      <body className={new_rocker.className}>{children}</body>
     </html>
   )
 }
