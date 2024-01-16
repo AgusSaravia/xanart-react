@@ -1,51 +1,39 @@
 @tailwind components;
 
 @layer components {
-    .custom {
-        @apply text-white  hover:text-red-500 px-3 text-xl;
-    }
-
-
+  .custom {
+    @apply text-white  hover:text-red-500 px-3 text-xl;
+  }
 }
-
 
 svg[stroke="currentColor"] {
-    color: black;
+  color: black;
 }
 
 @layer components {
-  
-    .heroParagraph {
-        @apply  text-2xl py-4 w-7/12 lg:w-5/12 
-    }
+  .heroParagraph {
+    @apply text-2xl py-4 w-7/12 lg:w-5/12;
+  }
 
-    .heroAnchorContainer {
-        @apply mt-[4rem] text-white bg-red-100 max-w-md rounded-xl py-4 max-h-14 text-center px-10
-     }
+  .heroAnchorContainer {
+    @apply mt-[4rem] text-white bg-red-100 max-w-md rounded-xl py-4 max-h-14 text-center px-10;
+  }
 
-
-    .formBtn {
-        @apply w-full bg-red-900 hover:bg-red-800 text-white h-10 rounded-xl
-    }
-
-
+  .formBtn {
+    @apply w-full bg-red-900 hover:bg-red-800 text-white h-10 rounded-xl;
+  }
 }
 
-
 @layer components {
+  .footer {
+    @apply h-[20svh] bg-zinc-950 w-[100%] flex flex-col items-center;
+  }
 
-    .footer {
-        @apply h-[20svh] bg-zinc-950 w-[100%] flex flex-col items-center
-    }
+  .parallax-container {
+    @apply h-[40svh] overflow-hidden relative;
+  }
 
-    .parallax-container {
-        @apply h-[40svh] overflow-hidden relative;
-    }
-
-    .parallax-image {
-        @apply h-full bg-fixed bg-center bg-no-repeat bg-cover transform translate-z-0;
-    }
-
-
-
+  .parallax-image {
+    @apply h-full bg-fixed bg-center bg-no-repeat bg-cover transform translate-z-0;
+  }
 }
