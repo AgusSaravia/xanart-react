@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import SplitType from "split-type";
 import { useRef } from "react";
 import Header from "./Header";
-import Image from "next/image";
+import LogoSVG from "./LogoSVG";
 
-const HeroText = ({ text }) => {
+const HeroText = ({ children }) => {
   const target = useRef(null);
 
   useEffect(() => {
@@ -28,26 +28,30 @@ const HeroText = ({ text }) => {
   }, [target]);
 
   return (
-    <h1
-      id="text"
-      ref={target}
-      className="   5xl:text-9xl sm:text-9xl md:text-6xl text-center"
-    >
-      {text}
+    <h1 id="text" ref={target} className="text-4xl text-center uppercase">
+      {children}
     </h1>
   );
 };
 const HeroGrid = () => {
   return (
-    <div className="grid grid-cols-5 grid-rows-8 gap-7">
-      <div className="row-span-2 col-start-2 row-start-2">
-        <HeroText text={"Vos pones la piel"} />
+    <div className="flex flex-col items-center sm:flex-row justify-center mt-6 px-6 gap-6 max-w-3xl mx-auto">
+      <div className="sm:self-start sm:basis-1/3">
+        <HeroText>
+          Vos pones
+          <br />
+          la piel
+        </HeroText>
       </div>
-      <div className="row-span-4 col-start-3 row-start-3">
-        <Image src={"/LOGO(1).png"} width={1000} height={500} alt="LOGO" />
+      <div className="sm:basis-1/3">
+        <LogoSVG width="auto" height="auto" />
       </div>
-      <div className="row-span-5 col-start-4 row-start-6">
-        <HeroText text={"Nosotros el arte"} />
+      <div className="sm:self-end sm:basis-1/3">
+        <HeroText>
+          Nosotros
+          <br />
+          el arte
+        </HeroText>
       </div>
     </div>
   );
