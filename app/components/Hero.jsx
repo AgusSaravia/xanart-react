@@ -5,7 +5,7 @@ import { useRef } from "react";
 import Header from "./Header";
 import LogoSVG from "./LogoSVG";
 
-const HeroText = ({ children, textSize }) => {
+export const HeroText = ({ children, textSize }) => {
   const target = useRef(null);
 
   useEffect(() => {
@@ -35,8 +35,8 @@ const HeroText = ({ children, textSize }) => {
 };
 const HeroGrid = () => {
   return (
-    <div className="flex flex-col items-center sm:flex-row justify-center mt-6 px-6 gap-6 max-w-3xl mx-auto">
-      <div className="sm:self-start sm:basis-1/3">
+    <div className="flex flex-col items-center sm:flex-row justify-center mt-6 px-6 gap-6 max-w-3xl mx-auto pt-[7.8rem]">
+      <div className="sm:self-start sm:basis-1/3 ">
         <HeroText textSize={"text-4xl text-center uppercase"}>
           Vos pones
           <br />

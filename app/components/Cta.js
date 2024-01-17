@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroText } from '../components/Hero'
+import {HeroText} from '../components/Hero'
 import Link from 'next/link'
 import PaintingStainsSVG from '../components/PaintingStainsSVG'
 const Cta = () => {
