@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div className="flex items-center  px-10  py-2 justify-center xl:text-2xl w-full">
       <nav className="text-white flex lg:flex-col sm:flex-row items-center  ">
-        <div className="pb-10">
+        <div className="md:pb-10">
           <Image
             src={"/XANART_logo_letras.png"}
             width={200}

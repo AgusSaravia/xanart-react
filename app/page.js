@@ -11,8 +11,7 @@ function Home() {
       <div className="bg-[url('/aletatuando.webp')]   w-[100svw]  min-h-screen bg-no-repeat bg-cover bg-center flex justify-center ">
         <Hero />
       </div>
-      <Cta/>
-      <GallerySection />
+      <Cta />
       <Form />
       <Footer />
     </>

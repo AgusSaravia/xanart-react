@@ -44,7 +44,7 @@ const HeroGrid = () => {
         </HeroText>
       </div>
       <div className="sm:basis-1/3">
-        <LogoSVG width="auto" height="auto" />
+        <LogoSVG width="100%" height="auto" />
       </div>
       <div className="sm:self-end sm:basis-1/3">
         <HeroText textSize={"text-4xl text-center uppercase"}>
