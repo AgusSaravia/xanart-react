@@ -2,7 +2,7 @@
 
 @layer components {
     .custom {
-        @apply text-white  hover:text-red-500 px-3 text-xl;
+        @apply text-white hover:text-red-500 px-3 text-xl;
     }
 
 

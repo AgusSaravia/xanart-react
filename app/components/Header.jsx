@@ -52,7 +52,7 @@ export default function Header() {
                 </svg>
               </div>
             </div>
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-evenly  min-h-[250px]">
               <NavLinks links={navigation} />
             </ul>
           </div>
