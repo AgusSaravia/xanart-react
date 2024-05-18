@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { service_ID, template_ID, public_key } from "../data";
 
 const INPUT_CLASSES =
-  "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6";
+  "block w-full  rounded-md border-0 border-b-2 border-gray-300 appearance-none bg-transparent py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6";
 
 function FormInput({ title, id, name, type, placeholder }) {
   return (
@@ -36,37 +36,38 @@ function Form() {
         service_ID.toString(),
         template_ID.toString(),
         form.current,
-        public_key.toString(),
+        public_key.toString()
       )
       .then(
         (result) => {
           console.log(result.text);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
-        },
+        }
       );
   };
 
   return (
-    <section className=" max-w-lg m-auto bg-zinc-900">
+    <section className="max-w-4xl m-auto">
       <h2 className="text-base font-semibold leading-7 text-gray-100">
         Contactame!
       </h2>
-      <form ref={form} action="#" method="post" className="flex flex-col gap-4">
+      <form
+        ref={form}
+        action="#"
+        method="post"
+        className="flex flex-col gap-4 w-full"
+        onSubmit={sendEmail}
+      >
         <FormInput title="Nombre" type="text" name="Nombre" />
         <FormInput title="Apellido" type="text" name="Surname" />
         <FormInput title="Email" type="email" name="Email" />
         <FormInput title="Celular" type="tel" name="phone" />
-        <textarea
-          className="text-black"
-          name="Message"
-          required
-          cols="30"
-          rows="5"
-        ></textarea>
-        <button className="formBtn" type="submit" onClick={sendEmail}>
-          A TATUARSEEEEEEEE
+
+        <button className="formBtn" type="submit">
+          A TATUARSE
         </button>
       </form>
     </section>

@@ -22,7 +22,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg "
-              src="/foto-2-1.webp"
+              src="/foto-3.png"
               alt=""
             />
           </div>
@@ -59,7 +59,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-10.webp"
+              src="/foto-9.webp"
               alt=""
             />
           </div>
@@ -68,14 +68,14 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-1-1.webp"
+              src="/foto-5.png"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-11.webp"
+              src="/foto-7.webp"
               alt=""
             />
           </div>

@@ -1,11 +1,10 @@
 import "./globals.css";
 import "./components.css";
-import { New_Rocker } from "next/font/google";
-import { link } from "fs";
+import { Creepster, } from "next/font/google";
 
-const new_rocker = New_Rocker({
-  weight: "400",
+const creepster = Creepster({
   subsets: ["latin"],
+  weight: "400"
 });
 export const metadata = {
   title: "Xanart Studios",
@@ -15,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={new_rocker.className}>{children}</body>
+      <body className={creepster.className}>{children}</body>
     </html>
   );
 }
