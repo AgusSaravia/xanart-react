@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import { service_ID, template_ID, public_key } from "../data";
 
 const INPUT_CLASSES =
-  "block w-full  rounded-md border-0 border-b-2 border-gray-300 appearance-none bg-transparent py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6";
+  "block w-full dark:text-white light:text-black rounded-md border-0 border-b-2 border-gray-300 appearance-none bg-transparent py-1.5 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6";
 
 function FormInput({ title, id, name, type, placeholder }) {
   return (
@@ -50,7 +50,7 @@ function Form() {
   };
 
   return (
-    <section className="max-w-4xl m-auto">
+    <section className="max-w-4xl m-auto ">
       <h2 className="text-base font-semibold leading-7 text-gray-100">
         Contactame!
       </h2>
