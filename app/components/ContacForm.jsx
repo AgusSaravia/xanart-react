@@ -66,7 +66,10 @@ function Form() {
         <FormInput title="Email" type="email" name="Email" />
         <FormInput title="Celular" type="tel" name="phone" />
 
-        <button className="formBtn" type="submit">
+        <button
+          className="w-full bg-red-900 hover:bg-red-800 text-white h-10 rounded-xl"
+          type="submit"
+        >
           A TATUARSE
         </button>
       </form>

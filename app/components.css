@@ -14,19 +14,17 @@ svg[stroke="currentColor"] {
 }
 
 @layer components {
-  
+
     .heroParagraph {
-        @apply  text-2xl py-4 w-7/12 lg:w-5/12 
+        @apply text-2xl py-4 w-7/12 lg:w-5/12
     }
 
     .heroAnchorContainer {
         @apply mt-[4rem] text-white bg-red-100 max-w-md rounded-xl py-4 max-h-14 text-center px-10
-     }
-
-
-    .formBtn {
-        @apply w-full bg-red-900 hover:bg-red-800 text-white h-10 rounded-xl
     }
+
+
+
 
 
 }
