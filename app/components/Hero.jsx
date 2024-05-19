@@ -43,7 +43,7 @@ const HeroGrid = () => {
             la piel
           </HeroText>
         </div>
-        <div className="basis-[50%] max-h-[50%] sm:basis-1/3 aspect-[1215/1763] bg-[ url('/logo.svg') ] "></div>
+        <div className="basis-[50%]  sm:basis-1/3 aspect-[1215/1715] bg-[url('/logo.svg')] " />
         <div className="sm:self-end sm:basis-1/3">
           <HeroText textSize={"text-4xl text-center lg:text-5xl uppercase"}>
             Nosotros
@@ -57,7 +57,6 @@ const HeroGrid = () => {
 };
 
 const Hero = () => {
-  const isWindowDefined = typeof window !== "undefined";
   return (
     <>
       <section className="w-full  text-white flex flex-col py-4 bg-opacity-60   bg-black">
