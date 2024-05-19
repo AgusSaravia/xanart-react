@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import SplitType from "split-type";
 import { useRef } from "react";
 import Header from "./Header";
-import LogoSVG from "./LogoSVG";
 
 export const HeroText = ({ children, textSize }) => {
   const target = useRef(null);
