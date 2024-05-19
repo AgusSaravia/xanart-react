@@ -28,30 +28,30 @@ export const HeroText = ({ children, textSize }) => {
   }, [target]);
 
   return (
-    <h1 id="text" ref={target} className={textSize}>
+    <h1 id="text" ref={target} className={textSize + " invisible"}>
       {children}
     </h1>
   );
 };
 const HeroGrid = () => {
   return (
-    <div className="flex flex-col items-center sm:flex-row justify-center mt-6 px-6 gap-6 max-w-3xl mx-auto pt-[7.8rem]">
-      <div className="sm:self-start sm:basis-1/3 ">
-        <HeroText textSize={"text-4xl text-center uppercase"}>
-          Vos pones
-          <br />
-          la piel
-        </HeroText>
-      </div>
-      <div className="sm:basis-1/3">
-        <LogoSVG width="100%" height="auto" />
-      </div>
-      <div className="sm:self-end sm:basis-1/3">
-        <HeroText textSize={"text-4xl text-center uppercase"}>
-          Nosotros
-          <br />
-          el arte
-        </HeroText>
+    <div className="flex-1 flex items-center p-6">
+      <div className=" h-full w-full flex flex-col items-center sm:flex-row justify-center mt-6 px-6 gap-6 max-w-3xl lg:max-w-6xl mx-auto ">
+        <div className="sm:self-start sm:basis-1/3 ">
+          <HeroText textSize={"text-4xl text-center uppercase lg:text-5xl"}>
+            Vos pones
+            <br />
+            la piel
+          </HeroText>
+        </div>
+        <div className="basis-[50%] max-h-[50%] sm:basis-1/3 aspect-[1215/1763] bg-[ url('/logo.svg') ] "></div>
+        <div className="sm:self-end sm:basis-1/3">
+          <HeroText textSize={"text-4xl text-center lg:text-5xl uppercase"}>
+            Nosotros
+            <br />
+            el arte
+          </HeroText>
+        </div>
       </div>
     </div>
   );
@@ -61,7 +61,7 @@ const Hero = () => {
   const isWindowDefined = typeof window !== "undefined";
   return (
     <>
-      <section className="w-full   gap-32 py-4 bg-opacity-60   bg-black">
+      <section className="w-full  text-white flex flex-col py-4 bg-opacity-60   bg-black">
         <Header />
 
         <HeroGrid />

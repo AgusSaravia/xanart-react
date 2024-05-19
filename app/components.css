@@ -9,10 +9,6 @@
 }
 
 
-svg[stroke="currentColor"] {
-    color: black;
-}
-
 @layer components {
 
     .heroParagraph {

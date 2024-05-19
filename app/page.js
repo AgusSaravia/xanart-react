@@ -7,18 +7,19 @@ import { Footer } from "./components/Footer";
 
 function Home() {
   return (
-    <>
-      <div className="bg-[url('/aletatuando.webp')]   w-[100svw]  min-h-screen bg-no-repeat bg-cover bg-center flex justify-center ">
+    <div className="snap-y h-[100svh] overflow-y-scroll snap-mandatory">
+      <div className="snap-start bg-[url('/aletatuando.webp')]   w-[100svw]  h-[100svh] bg-no-repeat bg-cover bg-center flex justify-center ">
         <Hero />
       </div>
+      <div className="snap-start">
+        <GallerySection />
+        <div className="w-full h-full bg-black">
 
-      <GallerySection />
-      <div className="w-full h-full bg-black">
-
-        <Form />
+          <Form />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,8 +1,4 @@
 import React from "react";
-import SocialMediaLinks from "./SocialMediaLinks";
-import { artists, navigation } from "../data";
-import NavLinks from "./NavLinks.jsx";
-import Image from "next/image";
 
 export const Footer = () => {
   return (
