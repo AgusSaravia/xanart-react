@@ -34,10 +34,10 @@ export default function Header() {
             className={isNavOpen ? "showMenuNav" : "hideMenuNav"} //toggle class based on isNavOpen
           >
             <div
-              className="CROSS-ICON absolute top-0 right-0 px-8 py-8 bg-white  first:hover:bg-red-900"
+              className="CROSS-ICON absolute top-0 right-0 px-8 py-8 bg-black  first:hover:bg-red-900"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
-              <div className="hover:bg-white">
+              <div>
                 <svg
                   className="h-8 w-8  "
                   viewBox="0 0 24 24"
