@@ -1,6 +1,6 @@
 export const navigation = [
   { name: "Home", link: "/" },
-  { name: "Tattoos", link: "/Gallery" },
+  { name: "Tattoos", link: "Gallery" },
   ,
 ];
 const public_key = "KyrlWZqMzet3THDnm";

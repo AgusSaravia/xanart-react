@@ -7,39 +7,3 @@
 
 
 }
-
-
-@layer components {
-
-    .heroParagraph {
-        @apply text-2xl py-4 w-7/12 lg:w-5/12
-    }
-
-    .heroAnchorContainer {
-        @apply mt-[4rem] text-white bg-red-100 max-w-md rounded-xl py-4 max-h-14 text-center px-10
-    }
-
-
-
-
-
-}
-
-
-@layer components {
-
-    .footer {
-        @apply h-[20svh] bg-zinc-950 w-[100%] flex flex-col items-center
-    }
-
-    .parallax-container {
-        @apply h-[40svh] overflow-hidden relative;
-    }
-
-    .parallax-image {
-        @apply h-full bg-fixed bg-center bg-no-repeat bg-cover transform translate-z-0;
-    }
-
-
-
-}
