@@ -7,14 +7,20 @@ const Gallery = () => {
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-1-1.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-2-1.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -23,21 +29,30 @@ const Gallery = () => {
             <img
               className="h-auto max-w-full rounded-lg "
               src="/foto-3.png"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-12.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-6.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -46,21 +61,30 @@ const Gallery = () => {
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-10.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-4.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-9.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -69,21 +93,30 @@ const Gallery = () => {
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-5.png"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-7.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
               src="/foto-8.webp"
-              alt=""
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
