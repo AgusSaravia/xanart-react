@@ -8,13 +8,13 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex items-center  px-10  py-2 justify-center xl:text-2xl w-full">
+    <div className="flex items-center lg:mx-1 px-10  py-4 justify-center xl:text-2xl w-full">
       <nav className="text-white flex lg:flex-col sm:flex-row items-center  ">
         <div className="md:pb-10">
           <Image
             src={"/XANART_logo_letras.png"}
-            width={200}
-            height={100}
+            width={"300"}
+            height={"100"}
             alt="Logo"
             priority={true}
           />
@@ -25,9 +25,9 @@ export default function Header() {
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
-            <span className="block h-0.5 w-8 animate-pulse bg-red-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-red-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-red-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-red-500"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-red-500"></span>
+            <span className="block h-0.5 w-8 animate-pulse bg-red-500"></span>
           </div>
 
           <div

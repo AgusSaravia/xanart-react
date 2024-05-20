@@ -34,7 +34,7 @@ export const HeroText = ({ children, textSize }) => {
 };
 const HeroGrid = () => {
   return (
-    <div className="flex-1 flex items-center p-6">
+    <div className="flex-1 flex items-center p-6 text-white">
       <div className=" h-full sm:h-auto w-full flex flex-col items-center sm:flex-row justify-center mt-6 px-6 gap-6 max-w-3xl lg:max-w-6xl mx-auto ">
         <div className="sm:self-start sm:h-auto sm:basis-1/3 ">
           <HeroText textSize={"text-4xl text-center uppercase lg:text-5xl "}>

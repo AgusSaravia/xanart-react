@@ -6,7 +6,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-1-1.webp"
+              src="/GalleryImages/foto-1-1.webp"
               alt="Ale tatuando"
               fetchPriority="low"
               loading="lazy"
@@ -16,7 +16,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-2-1.webp"
+              src="/GalleryImages/foto-2-1.webp"
               alt="Ale tatuando"
               fetchPriority="low"
               loading="lazy"
@@ -28,7 +28,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg "
-              src="/foto-3.png"
+              src="/GalleryImages/foto-3.webp"
               alt="Ale tatuando"
               fetchPriority="low"
               loading="lazy"
@@ -38,7 +38,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-12.webp"
+              src="/GalleryImages/foto-12.webp"
               alt="Ale tatuando"
               fetchPriority="low"
               loading="lazy"
@@ -48,39 +48,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-6.webp"
-              alt="Ale tatuando"
-              fetchPriority="low"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/foto-10.webp"
-              alt="Ale tatuando"
-              fetchPriority="low"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/foto-4.webp"
-              alt="Ale tatuando"
-              fetchPriority="low"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="/foto-9.webp"
+              src="/GalleryImages/foto-6.webp"
               alt="Ale tatuando"
               fetchPriority="low"
               loading="lazy"
@@ -92,7 +60,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-5.png"
+              src="/GalleryImages/foto-10.webp"
               alt="Ale tatuando"
               fetchPriority="low"
               loading="lazy"
@@ -102,7 +70,7 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-7.webp"
+              src="/GalleryImages/foto-4.webp"
               alt="Ale tatuando"
               fetchPriority="low"
               loading="lazy"
@@ -112,7 +80,29 @@ const Gallery = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="/foto-8.webp"
+              src="/GalleryImages/foto-9.webp"
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="/GalleryImages/foto-5.webp"
+              alt="Ale tatuando"
+              fetchPriority="low"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="/GalleryImages/foto-7.webp"
               alt="Ale tatuando"
               fetchPriority="low"
               loading="lazy"
@@ -127,7 +117,7 @@ const Gallery = () => {
 
 export const GallerySection = () => {
   return (
-    <div className="min-w-full ">
+    <div>
       <Gallery />
     </div>
   );

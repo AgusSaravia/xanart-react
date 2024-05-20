@@ -2,7 +2,7 @@
 import Hero from "./components/Hero";
 import Form from "./components/ContacForm";
 import { Footer } from "./components/Footer";
-import Gallery from "./components/Gallery";
+import { GallerySection } from "./components/Gallery.jsx"
 
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
       </div>
       <div className="snap-start">
         <div className="w-full h-full bg-black">
-          <Gallery />
+          <GallerySection />
           <Form />
         </div>
         <Footer />
