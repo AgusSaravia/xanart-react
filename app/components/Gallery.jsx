@@ -125,10 +125,12 @@ const Gallery = () => {
   );
 };
 
-export const GallerySection = () => {
+const GallerySection = () => {
   return (
     <div className="min-w-full ">
       <Gallery />
     </div>
   );
 };
+
+export default GallerySection;
