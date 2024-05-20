@@ -1,9 +1,9 @@
 "use client";
 import Hero from "./components/Hero";
 import Form from "./components/ContacForm";
-
-import { GallerySection } from "./components/Gallery";
 import { Footer } from "./components/Footer";
+import Gallery from "./components/Gallery";
+
 
 function Home() {
   return (
@@ -12,9 +12,8 @@ function Home() {
         <Hero />
       </div>
       <div className="snap-start">
-        <GallerySection />
         <div className="w-full h-full bg-black">
-
+          <Gallery />
           <Form />
         </div>
         <Footer />
